@@ -136,8 +136,9 @@ namespace FirstForm {
 
 	private: System::Windows::Forms::Timer^ trialTimer;
 	private: System::Windows::Forms::Label^ trialLabel;
+	private: System::Windows::Forms::Button^ IDConfirmButton;
 
-	private: System::Windows::Forms::Button^ button1;
+
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button4;
@@ -276,7 +277,7 @@ private: System::Windows::Forms::Label^ label18;
 			this->participantID = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->IDConfirmButton = (gcnew System::Windows::Forms::Button());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -407,7 +408,7 @@ private: System::Windows::Forms::Label^ label18;
 			this->tabID->Controls->Add(this->participantID);
 			this->tabID->Controls->Add(this->label1);
 			this->tabID->Controls->Add(this->label2);
-			this->tabID->Controls->Add(this->button1);
+			this->tabID->Controls->Add(this->IDConfirmButton);
 			this->tabID->Location = System::Drawing::Point(4, 34);
 			this->tabID->Name = L"tabID";
 			this->tabID->Padding = System::Windows::Forms::Padding(3);
@@ -428,7 +429,6 @@ private: System::Windows::Forms::Label^ label18;
 			this->lbWelcome->Size = System::Drawing::Size(114, 25);
 			this->lbWelcome->TabIndex = 17;
 			this->lbWelcome->Text = L"Participant";
-			this->lbWelcome->Click += gcnew System::EventHandler(this, &MainForm::lbWelcome_Click);
 			// 
 			// participantID
 			// 
@@ -457,7 +457,6 @@ private: System::Windows::Forms::Label^ label18;
 			this->label1->Size = System::Drawing::Size(150, 27);
 			this->label1->TabIndex = 15;
 			this->label1->Text = L"Participant ID";
-			this->label1->Click += gcnew System::EventHandler(this, &MainForm::label1_Click);
 			// 
 			// label2
 			// 
@@ -468,15 +467,15 @@ private: System::Windows::Forms::Label^ label18;
 			this->label2->Size = System::Drawing::Size(0, 25);
 			this->label2->TabIndex = 13;
 			// 
-			// button1
+			// IDConfirmButton
 			// 
-			this->button1->Location = System::Drawing::Point(402, 466);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(186, 108);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"Confirm";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MainForm::button1_Click);
+			this->IDConfirmButton->Location = System::Drawing::Point(402, 466);
+			this->IDConfirmButton->Name = L"IDConfirmButton";
+			this->IDConfirmButton->Size = System::Drawing::Size(186, 108);
+			this->IDConfirmButton->TabIndex = 0;
+			this->IDConfirmButton->Text = L"Confirm";
+			this->IDConfirmButton->UseVisualStyleBackColor = true;
+			this->IDConfirmButton->Click += gcnew System::EventHandler(this, &MainForm::IDConfirmButton_Click);
 			// 
 			// tabPage3
 			// 
@@ -826,7 +825,6 @@ private: System::Windows::Forms::Label^ label18;
 			this->trialLabel->Size = System::Drawing::Size(70, 25);
 			this->trialLabel->TabIndex = 5;
 			this->trialLabel->Text = L"label3";
-			this->trialLabel->Click += gcnew System::EventHandler(this, &MainForm::label3_Click);
 			// 
 			// nextTrial
 			// 
@@ -1023,7 +1021,6 @@ private: System::Windows::Forms::Label^ label18;
 			this->testLabel->Size = System::Drawing::Size(117, 25);
 			this->testLabel->TabIndex = 6;
 			this->testLabel->Text = L"label3_test";
-			this->testLabel->Click += gcnew System::EventHandler(this, &MainForm::label3_Click_1);
 			// 
 			// TabGoQuest
 			// 
@@ -1315,7 +1312,7 @@ private: System::Windows::Forms::Label^ label18;
 
 		int freq_tests_size = freq_tests.size();
 
-
+		// Padding ID into '0'+string(ID) format 
 		std::string ID_str = msclr::interop::marshal_as<std::string>(participant_id->PadLeft(2, '0'));
 
 		responses.open("C:\\Users\\User\\Desktop\\User-study-1\\user_studies_1-pilot-study\\responses\\responses-" + ID_str + ".csv");
@@ -1329,10 +1326,12 @@ private: System::Windows::Forms::Label^ label18;
 
 		NextStep();
 	};
+	// goto next tab
 	private: System::Void NextStep() {
 		if (this->stepsControl->SelectedIndex + 1 < this->stepsControl->TabPages->Count)
 			this->stepsControl->SelectedIndex++;
 	};
+	// goto previous tab
 	private: System::Void PreviousStep() {
 		if (this->stepsControl->SelectedIndex > 0)
 			this->stepsControl->SelectedIndex--;
@@ -1341,6 +1340,7 @@ private: System::Windows::Forms::Label^ label18;
 		PBDEngine_CWrapper_StopEngine();
 		PBDEngine_CWrapper_Release();
 	};
+	// control the action to perform when specific tab is reached 
 	private: System::Void stepsControl_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 		if (stepsControl->SelectedTab == tabTrials) 
 		{
@@ -1358,7 +1358,7 @@ private: System::Windows::Forms::Label^ label18;
 		}
 	};
 
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) { 
+	private: System::Void IDConfirmButton_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ participant_id = this->participantID->Text;
 		if (msclr::interop::marshal_as<std::string>(participant_id) == "") {
 			this->lbWelcome->Text = "Please provide participant ID";
@@ -1529,7 +1529,7 @@ private: System::Windows::Forms::Label^ label18;
 				double arousal_level = sliderArousal->Value / 10.0f;// sliderArousal->Value;
 					//responses << msclr::interop::marshal_as<std::string>(this->participantID->Text) << "," << curFrequencyBase << "," << curNumPoints << "," << speed_tests[speed_test_Index][2] << "," << speed_tests[speed_test_Index][3] << "," << speed_tests[speed_test_Index][4] << "," << intensity_level << "," << valence_level << "," << arousal_level << "\n" << std::flush;
 			}
-
+			// This is to set bar positions to the places we want before user scrolls, the value change action brought by this will not be considered as human input
 			/////////////////////////////////////////////////////////////////////////////////////////
 			selfUpdateNotHumanUpdate = true;
 			sliderIntensity->Value = sliderIntensity->Minimum;
@@ -1537,7 +1537,6 @@ private: System::Windows::Forms::Label^ label18;
 			sliderValence->Value = (sliderValence->Maximum + sliderValence->Minimum) / 2.0;
 			selfUpdateNotHumanUpdate = true;
 			sliderArousal->Value = sliderArousal->Minimum;
-			
 			/////////////////////////////////////////////////////////////////////////////////////////
 
 			speed_test_Index++;
@@ -1577,12 +1576,14 @@ private: System::Windows::Forms::Label^ label18;
 			// if stimuli are all executed 
 			else { NextStep(); }
 
+			// if stimulus reaches 21, rest
 			if (speed_test_Index == 20) {
 				trialPass = false;
 			}
 			
 		}
 	}
+	// Stop rendering for trial and reset trial conditions
 	private: System::DateTime trialStarted;
 	private: System::Void OnTrialStimulusTimer(System::Object^ state) {
 		configureContent(pm, shapes[curShape], 0, curFrequencyBase, curNumSamples); // stop haptic
@@ -1627,6 +1628,7 @@ private: System::Windows::Forms::Label^ label18;
 
 				responses << msclr::interop::marshal_as<std::string>(this->participantID->Text) << "," << curFrequencyBase << "," << curNumPoints << "," << freq_tests[freq_test_Index][2] << "," << freq_tests[freq_test_Index][3] << "," << freq_tests[freq_test_Index][4] << "," << intensity_level << "," << valence_level << "," << arousal_level << "\n" << std::flush;
 			}
+			// This is to set bar positions to the places we want before user scrolls
 			/////////////////////////////////////////////////////////////////////////////////////////
 			selfUpdateNotHumanUpdate = true;
 			sliderIntensityTest->Value = sliderIntensityTest->Minimum;
@@ -1703,20 +1705,14 @@ private: System::Windows::Forms::Label^ label18;
 		auto elapsedms = (System::DateTime::Now - testStarted).TotalMilliseconds + testTimer->Interval;
 		testProgress->Width = System::Math::Min(elapsedms / (stimulusSeconds * 1000.0), 1.0) * _testWidth;
 	}
-
-	private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void label3_Click_1(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void lbWelcome_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
 };
 }
 
+
+
+
+
+// Functions for PBD engine
 void declareContent(PBD_PrimitiveManager_Handler pm, float side) {
 	//Let's delete the shapes if they had already been created:
 	for (int s = 0; s < 5; s++)

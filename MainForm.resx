@@ -8255,18 +8255,6 @@ Please click on 'Start Testing' to move to the next stimulation if you are ready
         BBJIIIEEEkgggZhDkv4/r2gYDLG7SMQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Question 4: Have you had used a mid - air haptic device before ?
-
-If yes, how experienced are you with mid - air haptics ? You can choose from:
-
-1) tried it once
-2) tried a few times
-3) use it regularly
-4) know it well
-
-If No, please enter no.</value>
-  </data>
   <metadata name="trialTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

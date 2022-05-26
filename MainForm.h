@@ -75,7 +75,7 @@ std::ofstream responses;
 std::ofstream quest_responses;
 std::ofstream q_responses;
 
-const int stimulusSeconds = 3;
+const int stimulusSeconds = 1;
 int currentSeconds = 0;
 
 namespace FirstForm {
@@ -196,73 +196,81 @@ namespace FirstForm {
 
 
 
-private: System::Windows::Forms::Button^ button7;
-private: System::Windows::Forms::Button^ button8;
+	private: System::Windows::Forms::Button^ button7;
+	private: System::Windows::Forms::Button^ button8;
 
-private: System::Windows::Forms::Button^ button9;
-
-
-private: System::Windows::Forms::Button^ button10;
-private: System::Windows::Forms::TabPage^ tabPage1;
-
-private: System::Windows::Forms::Button^ button11;
-private: System::Windows::Forms::Button^ button12;
-
-private: System::Windows::Forms::TabPage^ TabGoQuest;
-
-private: System::Windows::Forms::TabPage^ endPage;
-private: System::Windows::Forms::Label^ goodbyLabel;
-private: System::Windows::Forms::Button^ button13;
-private: System::Windows::Forms::Button^ button14;
-private: System::Windows::Forms::Button^ button15;
+	private: System::Windows::Forms::Button^ button9;
 
 
-private: System::Windows::Forms::Label^ label3;
-private: System::Windows::Forms::TrackBar^ sliderArousal;
-private: System::Windows::Forms::TrackBar^ sliderIntensity;
-private: System::Windows::Forms::TrackBar^ sliderIntensityTest;
-private: System::Windows::Forms::TrackBar^ sliderArousalTest;
-private: System::Windows::Forms::TabPage^ tabQuest;
+	private: System::Windows::Forms::Button^ button10;
+	private: System::Windows::Forms::TabPage^ tabPage1;
 
-private: System::Windows::Forms::Button^ button17;
-private: System::Windows::Forms::Label^ label4;
-private: System::Windows::Forms::Label^ label5;
-private: System::Windows::Forms::RichTextBox^ Q1Text;
-private: System::Windows::Forms::RichTextBox^ Q2Text;
+	private: System::Windows::Forms::Button^ button11;
+	private: System::Windows::Forms::Button^ button12;
 
-private: System::Windows::Forms::TabPage^ tabQuest1;
-private: System::Windows::Forms::Label^ label6;
-private: System::Windows::Forms::RichTextBox^ Q3Text;
-private: System::Windows::Forms::RichTextBox^ Q4Text;
-private: System::Windows::Forms::Label^ label7;
-private: System::Windows::Forms::Button^ button18;
-private: System::Windows::Forms::PictureBox^ pictureBox3;
-private: System::Windows::Forms::Label^ label9;
-private: System::Windows::Forms::Label^ label8;
-private: System::Windows::Forms::PictureBox^ pictureBox4;
-private: System::Windows::Forms::PictureBox^ pictureBox2;
-private: System::Windows::Forms::PictureBox^ pictureBox5;
-private: System::Windows::Forms::Label^ label11;
-private: System::Windows::Forms::Label^ label10;
-private: System::Windows::Forms::PictureBox^ pictureBox6;
-private: System::Windows::Forms::Label^ label12;
-private: System::Windows::Forms::Label^ label13;
-private: System::Windows::Forms::Label^ label14;
-private: System::Windows::Forms::Label^ label15;
-private: System::Windows::Forms::Label^ label16;
-private: System::Windows::Forms::Label^ label17;
-private: System::Windows::Forms::Label^ label18;
+	private: System::Windows::Forms::TabPage^ TabGoQuest;
+
+	private: System::Windows::Forms::TabPage^ endPage;
+	private: System::Windows::Forms::Label^ goodbyLabel;
+	private: System::Windows::Forms::Button^ button13;
+	private: System::Windows::Forms::Button^ button14;
+	private: System::Windows::Forms::Button^ button15;
 
 
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::TrackBar^ sliderArousal;
+	private: System::Windows::Forms::TrackBar^ sliderIntensity;
+	private: System::Windows::Forms::TrackBar^ sliderIntensityTest;
+	private: System::Windows::Forms::TrackBar^ sliderArousalTest;
+	private: System::Windows::Forms::TabPage^ tabQuest;
+
+	private: System::Windows::Forms::Button^ button17;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Label^ label5;
+
+	private: System::Windows::Forms::RichTextBox^ Q2Text;
+
+	private: System::Windows::Forms::TabPage^ tabQuest1;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::RichTextBox^ Q3Text;
+
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Button^ button18;
+	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::PictureBox^ pictureBox4;
+	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::PictureBox^ pictureBox5;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::PictureBox^ pictureBox6;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::Label^ label14;
+	private: System::Windows::Forms::Label^ label15;
+	private: System::Windows::Forms::Label^ label16;
+	private: System::Windows::Forms::Label^ label17;
+	private: System::Windows::Forms::Label^ label18;
+private: System::Windows::Forms::RadioButton^ radioButton4;
+private: System::Windows::Forms::RadioButton^ radioButton3;
+private: System::Windows::Forms::RadioButton^ radioButton2;
+private: System::Windows::Forms::RadioButton^ radioButton1;
+private: System::Windows::Forms::RadioButton^ radioButton5;
+private: System::Windows::Forms::RadioButton^ radioButton7;
+private: System::Windows::Forms::RadioButton^ radioButton6;
+private: System::Windows::Forms::RadioButton^ radioButton8;
 
 
 
 
 
 
-		   int _testWidth;
 
-#pragma region Windows Form Designer generated code
+
+		int _testWidth;
+
+		#pragma region Windows Form Designer generated code
 		/// <summary>
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
@@ -334,14 +342,19 @@ private: System::Windows::Forms::Label^ label18;
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->tabQuest = (gcnew System::Windows::Forms::TabPage());
+			this->radioButton7 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
 			this->Q2Text = (gcnew System::Windows::Forms::RichTextBox());
 			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->Q1Text = (gcnew System::Windows::Forms::RichTextBox());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->tabQuest1 = (gcnew System::Windows::Forms::TabPage());
+			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
 			this->button18 = (gcnew System::Windows::Forms::Button());
-			this->Q4Text = (gcnew System::Windows::Forms::RichTextBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->Q3Text = (gcnew System::Windows::Forms::RichTextBox());
 			this->label6 = (gcnew System::Windows::Forms::Label());
@@ -349,6 +362,7 @@ private: System::Windows::Forms::Label^ label18;
 			this->goodbyLabel = (gcnew System::Windows::Forms::Label());
 			this->trialTimer = (gcnew System::Windows::Forms::Timer(this->components));
 			this->testTimer = (gcnew System::Windows::Forms::Timer(this->components));
+			this->radioButton8 = (gcnew System::Windows::Forms::RadioButton());
 			this->stepsControl->SuspendLayout();
 			this->tabID->SuspendLayout();
 			this->tabPage3->SuspendLayout();
@@ -1055,9 +1069,11 @@ private: System::Windows::Forms::Label^ label18;
 			// 
 			// tabQuest
 			// 
+			this->tabQuest->Controls->Add(this->radioButton8);
+			this->tabQuest->Controls->Add(this->radioButton7);
+			this->tabQuest->Controls->Add(this->radioButton6);
 			this->tabQuest->Controls->Add(this->Q2Text);
 			this->tabQuest->Controls->Add(this->label5);
-			this->tabQuest->Controls->Add(this->Q1Text);
 			this->tabQuest->Controls->Add(this->label4);
 			this->tabQuest->Controls->Add(this->button17);
 			this->tabQuest->Location = System::Drawing::Point(4, 34);
@@ -1067,6 +1083,28 @@ private: System::Windows::Forms::Label^ label18;
 			this->tabQuest->TabIndex = 12;
 			this->tabQuest->Text = L"Ask";
 			this->tabQuest->UseVisualStyleBackColor = true;
+			// 
+			// radioButton7
+			// 
+			this->radioButton7->AutoSize = true;
+			this->radioButton7->Location = System::Drawing::Point(371, 152);
+			this->radioButton7->Name = L"radioButton7";
+			this->radioButton7->Size = System::Drawing::Size(162, 29);
+			this->radioButton7->TabIndex = 6;
+			this->radioButton7->TabStop = true;
+			this->radioButton7->Text = L"Right-handed";
+			this->radioButton7->UseVisualStyleBackColor = true;
+			// 
+			// radioButton6
+			// 
+			this->radioButton6->AutoSize = true;
+			this->radioButton6->Location = System::Drawing::Point(126, 152);
+			this->radioButton6->Name = L"radioButton6";
+			this->radioButton6->Size = System::Drawing::Size(149, 29);
+			this->radioButton6->TabIndex = 5;
+			this->radioButton6->TabStop = true;
+			this->radioButton6->Text = L"Left-handed";
+			this->radioButton6->UseVisualStyleBackColor = true;
 			// 
 			// Q2Text
 			// 
@@ -1086,22 +1124,13 @@ private: System::Windows::Forms::Label^ label18;
 				L"\n\r\nIf yes, please specify what activities \? (e.g., rock climbing)\r\n\r\nIf No, plea"
 				L"se enter \'No\'";
 			// 
-			// Q1Text
-			// 
-			this->Q1Text->Location = System::Drawing::Point(85, 127);
-			this->Q1Text->Name = L"Q1Text";
-			this->Q1Text->Size = System::Drawing::Size(62, 47);
-			this->Q1Text->TabIndex = 2;
-			this->Q1Text->Text = L"";
-			// 
 			// label4
 			// 
 			this->label4->Location = System::Drawing::Point(80, 50);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(867, 136);
 			this->label4->TabIndex = 1;
-			this->label4->Text = L"Question 1: Are you right or left-handed \? You can input 1) left-handed, 2) right"
-				L"-handed, 3) both-handed:";
+			this->label4->Text = L"Question 1: Are you right or left-handed \?";
 			// 
 			// button17
 			// 
@@ -1115,8 +1144,12 @@ private: System::Windows::Forms::Label^ label18;
 			// 
 			// tabQuest1
 			// 
+			this->tabQuest1->Controls->Add(this->radioButton5);
+			this->tabQuest1->Controls->Add(this->radioButton4);
+			this->tabQuest1->Controls->Add(this->radioButton3);
+			this->tabQuest1->Controls->Add(this->radioButton2);
+			this->tabQuest1->Controls->Add(this->radioButton1);
 			this->tabQuest1->Controls->Add(this->button18);
-			this->tabQuest1->Controls->Add(this->Q4Text);
 			this->tabQuest1->Controls->Add(this->label7);
 			this->tabQuest1->Controls->Add(this->Q3Text);
 			this->tabQuest1->Controls->Add(this->label6);
@@ -1128,6 +1161,61 @@ private: System::Windows::Forms::Label^ label18;
 			this->tabQuest1->Text = L"Ask1";
 			this->tabQuest1->UseVisualStyleBackColor = true;
 			// 
+			// radioButton5
+			// 
+			this->radioButton5->AutoSize = true;
+			this->radioButton5->Location = System::Drawing::Point(76, 389);
+			this->radioButton5->Name = L"radioButton5";
+			this->radioButton5->Size = System::Drawing::Size(205, 29);
+			this->radioButton5->TabIndex = 11;
+			this->radioButton5->TabStop = true;
+			this->radioButton5->Text = L"Never tried before";
+			this->radioButton5->UseVisualStyleBackColor = true;
+			// 
+			// radioButton4
+			// 
+			this->radioButton4->AutoSize = true;
+			this->radioButton4->Location = System::Drawing::Point(76, 529);
+			this->radioButton4->Name = L"radioButton4";
+			this->radioButton4->Size = System::Drawing::Size(147, 29);
+			this->radioButton4->TabIndex = 10;
+			this->radioButton4->TabStop = true;
+			this->radioButton4->Text = L"Know it well";
+			this->radioButton4->UseVisualStyleBackColor = true;
+			// 
+			// radioButton3
+			// 
+			this->radioButton3->AutoSize = true;
+			this->radioButton3->Location = System::Drawing::Point(76, 494);
+			this->radioButton3->Name = L"radioButton3";
+			this->radioButton3->Size = System::Drawing::Size(177, 29);
+			this->radioButton3->TabIndex = 9;
+			this->radioButton3->TabStop = true;
+			this->radioButton3->Text = L"Use it regularly";
+			this->radioButton3->UseVisualStyleBackColor = true;
+			// 
+			// radioButton2
+			// 
+			this->radioButton2->AutoSize = true;
+			this->radioButton2->Location = System::Drawing::Point(76, 459);
+			this->radioButton2->Name = L"radioButton2";
+			this->radioButton2->Size = System::Drawing::Size(197, 29);
+			this->radioButton2->TabIndex = 8;
+			this->radioButton2->TabStop = true;
+			this->radioButton2->Text = L"Tried a few times";
+			this->radioButton2->UseVisualStyleBackColor = true;
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->Location = System::Drawing::Point(76, 424);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(153, 29);
+			this->radioButton1->TabIndex = 7;
+			this->radioButton1->TabStop = true;
+			this->radioButton1->Text = L"Tried it once";
+			this->radioButton1->UseVisualStyleBackColor = true;
+			// 
 			// button18
 			// 
 			this->button18->Location = System::Drawing::Point(411, 671);
@@ -1138,22 +1226,15 @@ private: System::Windows::Forms::Label^ label18;
 			this->button18->UseVisualStyleBackColor = true;
 			this->button18->Click += gcnew System::EventHandler(this, &MainForm::button18_Click);
 			// 
-			// Q4Text
-			// 
-			this->Q4Text->Location = System::Drawing::Point(61, 493);
-			this->Q4Text->Name = L"Q4Text";
-			this->Q4Text->Size = System::Drawing::Size(74, 58);
-			this->Q4Text->TabIndex = 5;
-			this->Q4Text->Text = L"";
-			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
 			this->label7->Location = System::Drawing::Point(57, 278);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(754, 250);
+			this->label7->Size = System::Drawing::Size(754, 75);
 			this->label7->TabIndex = 4;
-			this->label7->Text = resources->GetString(L"label7.Text");
+			this->label7->Text = L"Question 4: Have you had used a mid - air haptic device before \?\r\n\r\nIf yes, how e"
+				L"xperienced are you with mid - air haptics \? You can choose from:";
 			// 
 			// Q3Text
 			// 
@@ -1204,6 +1285,17 @@ private: System::Windows::Forms::Label^ label18;
 			this->testTimer->Interval = 1000;
 			this->testTimer->Tick += gcnew System::EventHandler(this, &MainForm::testTimer_Tick);
 			// 
+			// radioButton8
+			// 
+			this->radioButton8->AutoSize = true;
+			this->radioButton8->Location = System::Drawing::Point(608, 152);
+			this->radioButton8->Name = L"radioButton8";
+			this->radioButton8->Size = System::Drawing::Size(157, 29);
+			this->radioButton8->TabIndex = 7;
+			this->radioButton8->TabStop = true;
+			this->radioButton8->Text = L"Both-handed";
+			this->radioButton8->UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(13, 25);
@@ -1247,6 +1339,7 @@ private: System::Windows::Forms::Label^ label18;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->sliderValenceTest))->EndInit();
 			this->TabGoQuest->ResumeLayout(false);
 			this->tabQuest->ResumeLayout(false);
+			this->tabQuest->PerformLayout();
 			this->tabQuest1->ResumeLayout(false);
 			this->tabQuest1->PerformLayout();
 			this->endPage->ResumeLayout(false);
@@ -1394,13 +1487,46 @@ private: System::Windows::Forms::Label^ label18;
 	}
 	private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
 
-		q_responses << msclr::interop::marshal_as<std::string>(this->participantID->Text) << "," << msclr::interop::marshal_as<std::string>(Q1Text->Text) << "," << msclr::interop::marshal_as<std::string>(Q2Text->Text) << "," << std::flush;
-		quest_responses << "Question 1: Are you right or left-handed ? You can input 1) left-handed, 2) right-handed, 3) both-handed:\n\n" 
-			<< "answer: " + msclr::interop::marshal_as<std::string>(Q1Text->Text) << "\n\n"
-			<< "Question 2: Are you involved in activities that require intensive use of hands ?.\n\nIf yes, please specify what activities ? (e.g., rock climbing)\n\nIf No, please enter no.\n\n"
-			<< "answer: " + msclr::interop::marshal_as<std::string>(Q2Text->Text) << "\n\n" << std::flush;
+		if ((radioButton6->Checked == false && radioButton7->Checked == false && radioButton8->Checked == false ) || msclr::interop::marshal_as<std::string>(Q2Text->Text) == "") {
 
-		NextStep();
+		}
+		else {
+			std::string Q1text;
+			int Q1Option;
+			if (radioButton6->Checked) {
+				Q1text = msclr::interop::marshal_as<std::string>(radioButton6->Text);
+				Q1Option = 1;
+			}
+			if (radioButton7->Checked) {
+				Q1text = msclr::interop::marshal_as<std::string>(radioButton7->Text);
+				Q1Option = 2;
+			}
+			if (radioButton8->Checked) {
+				Q1text = msclr::interop::marshal_as<std::string>(radioButton8->Text);
+				Q1Option = 3;
+			}
+
+			std::string Q2text;
+			int Q2Option;
+
+
+			if (msclr::interop::marshal_as<std::string>(Q2Text->Text) == "No" || msclr::interop::marshal_as<std::string>(Q2Text->Text) == "no") {
+				Q2text = "No";
+				Q2Option = 0;
+			}
+			else {
+				Q2text = msclr::interop::marshal_as<std::string>(Q2Text->Text);
+				Q2Option = 1;
+			}
+
+			q_responses << msclr::interop::marshal_as<std::string>(this->participantID->Text) << "," << Q1Option << "," << Q2Option << "," << std::flush;
+			quest_responses << "Question 1: Are you right or left-handed ? You can input 1) left-handed, 2) right-handed, 3) both-handed:\n\n"
+				<< "answer: " + Q1text << "\n\n"
+				<< "Question 2: Are you involved in activities that require intensive use of hands ?.\n\nIf yes, please specify what activities ? (e.g., rock climbing)\n\nIf No, please enter no.\n\n"
+				<< "answer: " + Q2text << "\n\n" << std::flush;
+
+			NextStep();
+		}
 	};
 
 	//private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -1411,12 +1537,40 @@ private: System::Windows::Forms::Label^ label18;
 
 	private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e) {
 
-		q_responses << msclr::interop::marshal_as<std::string>(Q4Text->Text) << "\n" << std::flush;
-		quest_responses << "Question 3: In 3 words, how would you describe the experience of the mid-air haptic sensation on your palm?"
-			<< "answer: " + msclr::interop::marshal_as<std::string>(Q3Text->Text) << "\n\n"
-			<< "Question 4: Have you had used a mid-air haptic device before ? (Yes/No).\n\nIf yes, how experienced are you with mid-air haptics ? You can choose from: ?\n\n1) tried it once\n2) tried a few times\n3) use it regularly\n4) know it well\n\nIf No, please enter no.\n\n"
-			<< "answer: " + msclr::interop::marshal_as<std::string>(Q4Text->Text) << "\n\n" << std::endl;
-		NextStep();
+		if ((radioButton5->Checked == false && radioButton1->Checked == false && radioButton2->Checked == false && radioButton3->Checked == false && radioButton4->Checked == false) || msclr::interop::marshal_as<std::string>(Q3Text->Text) == "") {
+
+		}
+		else {
+			std::string Q4text;
+			int Q4Option;
+			if (radioButton5->Checked) {
+				Q4text = msclr::interop::marshal_as<std::string>(radioButton5->Text);
+				Q4Option = 0;
+			}
+			if (radioButton1->Checked) {
+				Q4text = msclr::interop::marshal_as<std::string>(radioButton1->Text);
+				Q4Option = 1;
+			}
+			if (radioButton2->Checked) {
+				Q4text = msclr::interop::marshal_as<std::string>(radioButton2->Text);
+				Q4Option = 2;
+			}
+			if (radioButton3->Checked) {
+				Q4text = msclr::interop::marshal_as<std::string>(radioButton3->Text);
+				Q4Option = 3;
+			}
+			if (radioButton4->Checked) {
+				Q4text = msclr::interop::marshal_as<std::string>(radioButton4->Text);
+				Q4Option = 4;
+			}
+			q_responses << Q4Option << "\n" << std::flush;
+			quest_responses << "Question 3: In 3 words, how would you describe the experience of the mid-air haptic sensation on your palm?"
+				<< "answer: " + msclr::interop::marshal_as<std::string>(Q3Text->Text) << "\n\n"
+				<< "Question 4: Have you had used a mid-air haptic device before ? (Yes/No).\n\nIf yes, how experienced are you with mid-air haptics ? You can choose from: ?\n\n1) tried it once\n2) tried a few times\n3) use it regularly\n4) know it well\n\nIf No, please enter no.\n\n"
+				<< "answer: " + Q4text << "\n\n" << std::endl;
+			NextStep();
+		}
+		
 	}
 	bool selfUpdateNotHumanUpdate = false;
 	// determine if intensity is changed for trials

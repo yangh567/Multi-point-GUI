@@ -260,6 +260,13 @@ private: System::Windows::Forms::RadioButton^ radioButton5;
 private: System::Windows::Forms::RadioButton^ radioButton7;
 private: System::Windows::Forms::RadioButton^ radioButton6;
 private: System::Windows::Forms::RadioButton^ radioButton8;
+private: System::Windows::Forms::Label^ trialArousalLevel;
+private: System::Windows::Forms::Label^ trialValenceLevel;
+private: System::Windows::Forms::Label^ trialIntensityLevel;
+private: System::Windows::Forms::Label^ testArousalLevel;
+private: System::Windows::Forms::Label^ testValenceLevel;
+private: System::Windows::Forms::Label^ testIntensityLevel;
+
 
 
 
@@ -310,6 +317,9 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			this->button12 = (gcnew System::Windows::Forms::Button());
 			this->btnOK = (gcnew System::Windows::Forms::Button());
 			this->tabTrials = (gcnew System::Windows::Forms::TabPage());
+			this->trialArousalLevel = (gcnew System::Windows::Forms::Label());
+			this->trialValenceLevel = (gcnew System::Windows::Forms::Label());
+			this->trialIntensityLevel = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
@@ -342,6 +352,7 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->tabQuest = (gcnew System::Windows::Forms::TabPage());
+			this->radioButton8 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton7 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
 			this->Q2Text = (gcnew System::Windows::Forms::RichTextBox());
@@ -362,7 +373,9 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			this->goodbyLabel = (gcnew System::Windows::Forms::Label());
 			this->trialTimer = (gcnew System::Windows::Forms::Timer(this->components));
 			this->testTimer = (gcnew System::Windows::Forms::Timer(this->components));
-			this->radioButton8 = (gcnew System::Windows::Forms::RadioButton());
+			this->testIntensityLevel = (gcnew System::Windows::Forms::Label());
+			this->testValenceLevel = (gcnew System::Windows::Forms::Label());
+			this->testArousalLevel = (gcnew System::Windows::Forms::Label());
 			this->stepsControl->SuspendLayout();
 			this->tabID->SuspendLayout();
 			this->tabPage3->SuspendLayout();
@@ -735,6 +748,9 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			// 
 			// tabTrials
 			// 
+			this->tabTrials->Controls->Add(this->trialArousalLevel);
+			this->tabTrials->Controls->Add(this->trialValenceLevel);
+			this->tabTrials->Controls->Add(this->trialIntensityLevel);
 			this->tabTrials->Controls->Add(this->label9);
 			this->tabTrials->Controls->Add(this->label8);
 			this->tabTrials->Controls->Add(this->pictureBox4);
@@ -754,6 +770,33 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			this->tabTrials->TabIndex = 1;
 			this->tabTrials->Text = L"Trials";
 			this->tabTrials->UseVisualStyleBackColor = true;
+			// 
+			// trialArousalLevel
+			// 
+			this->trialArousalLevel->AutoSize = true;
+			this->trialArousalLevel->Location = System::Drawing::Point(900, 536);
+			this->trialArousalLevel->Name = L"trialArousalLevel";
+			this->trialArousalLevel->Size = System::Drawing::Size(82, 25);
+			this->trialArousalLevel->TabIndex = 16;
+			this->trialArousalLevel->Text = L"label21";
+			// 
+			// trialValenceLevel
+			// 
+			this->trialValenceLevel->AutoSize = true;
+			this->trialValenceLevel->Location = System::Drawing::Point(900, 357);
+			this->trialValenceLevel->Name = L"trialValenceLevel";
+			this->trialValenceLevel->Size = System::Drawing::Size(82, 25);
+			this->trialValenceLevel->TabIndex = 15;
+			this->trialValenceLevel->Text = L"label20";
+			// 
+			// trialIntensityLevel
+			// 
+			this->trialIntensityLevel->AutoSize = true;
+			this->trialIntensityLevel->Location = System::Drawing::Point(895, 187);
+			this->trialIntensityLevel->Name = L"trialIntensityLevel";
+			this->trialIntensityLevel->Size = System::Drawing::Size(82, 25);
+			this->trialIntensityLevel->TabIndex = 14;
+			this->trialIntensityLevel->Text = L"label19";
 			// 
 			// label9
 			// 
@@ -903,6 +946,9 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			// 
 			// tabTests
 			// 
+			this->tabTests->Controls->Add(this->testArousalLevel);
+			this->tabTests->Controls->Add(this->testValenceLevel);
+			this->tabTests->Controls->Add(this->testIntensityLevel);
 			this->tabTests->Controls->Add(this->label11);
 			this->tabTests->Controls->Add(this->label10);
 			this->tabTests->Controls->Add(this->pictureBox6);
@@ -1083,6 +1129,17 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			this->tabQuest->TabIndex = 12;
 			this->tabQuest->Text = L"Ask";
 			this->tabQuest->UseVisualStyleBackColor = true;
+			// 
+			// radioButton8
+			// 
+			this->radioButton8->AutoSize = true;
+			this->radioButton8->Location = System::Drawing::Point(608, 152);
+			this->radioButton8->Name = L"radioButton8";
+			this->radioButton8->Size = System::Drawing::Size(157, 29);
+			this->radioButton8->TabIndex = 7;
+			this->radioButton8->TabStop = true;
+			this->radioButton8->Text = L"Both-handed";
+			this->radioButton8->UseVisualStyleBackColor = true;
 			// 
 			// radioButton7
 			// 
@@ -1285,16 +1342,32 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			this->testTimer->Interval = 1000;
 			this->testTimer->Tick += gcnew System::EventHandler(this, &MainForm::testTimer_Tick);
 			// 
-			// radioButton8
+			// testIntensityLevel
 			// 
-			this->radioButton8->AutoSize = true;
-			this->radioButton8->Location = System::Drawing::Point(608, 152);
-			this->radioButton8->Name = L"radioButton8";
-			this->radioButton8->Size = System::Drawing::Size(157, 29);
-			this->radioButton8->TabIndex = 7;
-			this->radioButton8->TabStop = true;
-			this->radioButton8->Text = L"Both-handed";
-			this->radioButton8->UseVisualStyleBackColor = true;
+			this->testIntensityLevel->AutoSize = true;
+			this->testIntensityLevel->Location = System::Drawing::Point(888, 160);
+			this->testIntensityLevel->Name = L"testIntensityLevel";
+			this->testIntensityLevel->Size = System::Drawing::Size(82, 25);
+			this->testIntensityLevel->TabIndex = 20;
+			this->testIntensityLevel->Text = L"label19";
+			// 
+			// testValenceLevel
+			// 
+			this->testValenceLevel->AutoSize = true;
+			this->testValenceLevel->Location = System::Drawing::Point(888, 380);
+			this->testValenceLevel->Name = L"testValenceLevel";
+			this->testValenceLevel->Size = System::Drawing::Size(82, 25);
+			this->testValenceLevel->TabIndex = 21;
+			this->testValenceLevel->Text = L"label19";
+			// 
+			// testArousalLevel
+			// 
+			this->testArousalLevel->AutoSize = true;
+			this->testArousalLevel->Location = System::Drawing::Point(888, 605);
+			this->testArousalLevel->Name = L"testArousalLevel";
+			this->testArousalLevel->Size = System::Drawing::Size(82, 25);
+			this->testArousalLevel->TabIndex = 22;
+			this->testArousalLevel->Text = L"label19";
 			// 
 			// MainForm
 			// 
@@ -1578,6 +1651,7 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 	private: System::Void sliderIntensity_ValueChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (selfUpdateNotHumanUpdate == false) {
+			trialIntensityLevel->Text = ((sliderIntensity->Value) / 10.0f).ToString();
 			if (valence_changed == true && arousal_changed == true) {
 				nextTrial->Show();
 				if (trialPass == false) {
@@ -1594,6 +1668,7 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 	private: System::Void sliderValence_ValueChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (selfUpdateNotHumanUpdate == false) {
+			trialValenceLevel->Text = ((sliderValence->Value) / 10.0f).ToString();
 			if (intensity_changed == true && arousal_changed == true) {
 				nextTrial->Show();
 				if (trialPass == false) {
@@ -1609,6 +1684,7 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 	private: System::Void sliderArousal_ValueChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (selfUpdateNotHumanUpdate == false) {
+			trialArousalLevel->Text = ((sliderArousal->Value) / 10.0f).ToString();
 			if (intensity_changed == true && valence_changed == true) {
 				nextTrial->Show();
 				if (trialPass == false) {
@@ -1625,7 +1701,7 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 	private: System::Void sliderIntensityTest_ValueChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (selfUpdateNotHumanUpdate == false) {
-
+			testIntensityLevel->Text = ((sliderIntensityTest->Value) / 10.0f).ToString();
 			if (valenceTest_changed == true && arousalTest_changed == true) {
 				nextTest->Show();
 				if (testPass == false) {
@@ -1641,6 +1717,7 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 	private: System::Void sliderValenceTest_ValueChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (selfUpdateNotHumanUpdate == false) {
+			testValenceLevel->Text = ((sliderValenceTest->Value) / 10.0f).ToString();
 			if (intensityTest_changed == true && arousalTest_changed == true) {
 				nextTest->Show();
 				if (testPass == false) {
@@ -1656,6 +1733,7 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 	private: System::Void sliderArousalTest_ValueChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (selfUpdateNotHumanUpdate == false) {
+			testArousalLevel->Text = ((sliderArousalTest->Value) / 10.0f).ToString();
 			if (intensityTest_changed == true && valenceTest_changed == true) {
 				nextTest->Show();
 				if (testPass == false) {
@@ -1687,10 +1765,13 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			/////////////////////////////////////////////////////////////////////////////////////////
 			selfUpdateNotHumanUpdate = true;
 			sliderIntensity->Value = sliderIntensity->Minimum;
+			trialIntensityLevel->Text = ((sliderIntensity->Value) / 10.0f).ToString();
 			selfUpdateNotHumanUpdate = true;
 			sliderValence->Value = (sliderValence->Maximum + sliderValence->Minimum) / 2.0;
+			trialValenceLevel->Text = ((sliderValence->Value) / 10.0f).ToString();
 			selfUpdateNotHumanUpdate = true;
 			sliderArousal->Value = sliderArousal->Minimum;
+			trialArousalLevel->Text = ((sliderArousal->Value) / 10.0f).ToString();
 			/////////////////////////////////////////////////////////////////////////////////////////
 
 			speed_test_Index++;
@@ -1786,10 +1867,13 @@ private: System::Windows::Forms::RadioButton^ radioButton8;
 			/////////////////////////////////////////////////////////////////////////////////////////
 			selfUpdateNotHumanUpdate = true;
 			sliderIntensityTest->Value = sliderIntensityTest->Minimum;
+			testIntensityLevel->Text = ((sliderIntensityTest->Value) / 10.0f).ToString();
 			selfUpdateNotHumanUpdate = true;
 			sliderValenceTest->Value = (sliderValenceTest->Maximum + sliderValenceTest->Minimum) / 2.0;
+			testValenceLevel->Text = ((sliderValenceTest->Value) / 10.0f).ToString();
 			selfUpdateNotHumanUpdate = true;
 			sliderArousalTest->Value = sliderArousalTest->Minimum;
+			testArousalLevel->Text = ((sliderArousalTest->Value) / 10.0f).ToString();
 			/////////////////////////////////////////////////////////////////////////////////////////
 
 			freq_test_Index++;

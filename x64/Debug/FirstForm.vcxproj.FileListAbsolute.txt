@@ -1,0 +1,8 @@
+C:\Users\User\Desktop\ucl_phd_programme\C++_learning\ConsoleApplication1\FirstForm\x64\Debug\FirstForm.vcxproj.AssemblyReference.cache
+C:\Users\User\Desktop\ucl_phd_programme\C++_learning\ConsoleApplication1\FirstForm\x64\Debug\FirstForm.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\ucl_phd_programme\C++_learning\ConsoleApplication1\FirstForm\x64\Debug\FirstForm.MainForm.resources
+C:\Users\User\Desktop\ucl_phd_programme\C++_learning\ConsoleApplication1\FirstForm\x64\Debug\FirstForm.vcxproj.GenerateResource.cache
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\x64\Debug\FirstForm.vcxproj.AssemblyReference.cache
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\x64\Debug\FirstForm.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\x64\Debug\FirstForm.MainForm.resources
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\x64\Debug\FirstForm.vcxproj.GenerateResource.cache

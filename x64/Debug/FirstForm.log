@@ -1,0 +1,56 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (6.simplePBDEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SpeedTests_PBDEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MainForm.cpp
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\HapticShape.h(12,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\HapticShape.h(18,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  The contents of <variant> are available only with C++17 or later.
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(66,37): warning C4477: 'swprintf' : format string '%s' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'const char *'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(66,37): message : consider using '%hs' in the format string
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(66,37): message : consider using '%Ts' in the format string
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(66,37): message : this warning is based on non-standard semantics used by Visual C++
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1315,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1326,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1547,77): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1581,80): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1620,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1644,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1676,78): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1714,88): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1747,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1747,102): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1751,62): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1752,62): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1753,55): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1753,85): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1765,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1765,104): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1766,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1766,104): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1767,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1767,104): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1768,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1768,104): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1801,50): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1807,56): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1807,56): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1813,72): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1813,72): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1835,94): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1838,123): warning C4267: 'argument': conversion from 'size_t' to 'cl_uint', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.cpp(6,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(57): warning C4793: 'debugprintf': function compiled as native:
+  	varargs not supported under /clr
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(60): warning C4793: 'debugprintf': function compiled as native:
+  	Found an intrinsic not supported in managed code
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(62): warning C4793: 'debugprintf': function compiled as native:
+  	Found an intrinsic not supported in managed code
+MainForm.obj : warning LNK4248: unresolved typeref token (01000032) for 'OpenGLFramework.ILight'; image may not run
+  FirstForm.vcxproj -> C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\Debug\FirstForm.exe

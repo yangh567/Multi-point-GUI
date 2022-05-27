@@ -2,30 +2,6 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\SimpleOpenMPD2.exe</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
-      <FullPath>C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\GSPAT_RenderingEngine.dll</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
-      <FullPath>C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\GSPAT_SolverIBP.dll</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
-      <FullPath>C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\GSPAT_SolverNaive.dll</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
-      <FullPath>C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\GSPAT_SolverV2.dll</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
-      <FullPath>C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\GSPAT_SolverV3.dll</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
-      <FullPath>C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\GSPAT_SolverV4.dll</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
-      <FullPath>C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\SpeedTests_OpenMPD2.exe</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
       <FullPath>C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\x64\Debug\FirstForm.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>

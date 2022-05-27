@@ -1,8 +1,7 @@
 #pragma once
-
 #include <string> 
-#include <PBD_Engine_Prerequisites.h>
-#include <PBD_Engine_CWrapper.h>
+#include <OpenMPD_Engine/include/OpenMPD_Prerequisites.h>
+#include <OpenMPD_Engine/include/OpenMPD_CWrapper.h>
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
@@ -49,7 +48,7 @@ int speed_test_Index = 0;
 
 HapticShape* shapes[5] = { NULL, NULL, NULL, NULL, NULL };
 
-PBD_PrimitiveManager_Handler  pm;
+OpenMPD_Context_Handler  pm;
 cl_uint currentPD;
 cl_uint fixedAmplitude;
 std::list<cl_uint> primitives;
@@ -67,15 +66,15 @@ void print(const char* msg) {
 	OutputDebugString(buffer);
 }
 
-void declareContent(PBD_PrimitiveManager_Handler pm, float side);
-void configureContent(PBD_PrimitiveManager_Handler pm, HapticShape* shape, int numPoints, int baseFrequency, int numSamples);
-void destroyContent(PBD_PrimitiveManager_Handler pm);
+void declareContent(OpenMPD_Context_Handler pm, float side);
+void configureContent(OpenMPD_Context_Handler pm, HapticShape* shape, int numPoints, int baseFrequency, int numSamples);
+void destroyContent(OpenMPD_Context_Handler pm);
 
 std::ofstream responses;
 std::ofstream quest_responses;
 std::ofstream q_responses;
 
-const int stimulusSeconds = 1;
+const int stimulusSeconds = 10;
 int currentSeconds = 0;
 
 namespace FirstForm {
@@ -336,6 +335,9 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 			this->label18 = (gcnew System::Windows::Forms::Label());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->tabTests = (gcnew System::Windows::Forms::TabPage());
+			this->testArousalLevel = (gcnew System::Windows::Forms::Label());
+			this->testValenceLevel = (gcnew System::Windows::Forms::Label());
+			this->testIntensityLevel = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
@@ -373,9 +375,6 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 			this->goodbyLabel = (gcnew System::Windows::Forms::Label());
 			this->trialTimer = (gcnew System::Windows::Forms::Timer(this->components));
 			this->testTimer = (gcnew System::Windows::Forms::Timer(this->components));
-			this->testIntensityLevel = (gcnew System::Windows::Forms::Label());
-			this->testValenceLevel = (gcnew System::Windows::Forms::Label());
-			this->testArousalLevel = (gcnew System::Windows::Forms::Label());
 			this->stepsControl->SuspendLayout();
 			this->tabID->SuspendLayout();
 			this->tabPage3->SuspendLayout();
@@ -442,8 +441,7 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 			this->tabID->Size = System::Drawing::Size(996, 807);
 			this->tabID->TabIndex = 0;
 			this->tabID->Text = L"ID";
-			this->tabID->UseVisualStyleBackColor = true;
-			// 
+			this->tabID->UseVisualStyleBackColor = true;			// 
 			// lbWelcome
 			// 
 			this->lbWelcome->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
@@ -967,6 +965,33 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 			this->tabTests->TabIndex = 8;
 			this->tabTests->Text = L"Test";
 			// 
+			// testArousalLevel
+			// 
+			this->testArousalLevel->AutoSize = true;
+			this->testArousalLevel->Location = System::Drawing::Point(888, 605);
+			this->testArousalLevel->Name = L"testArousalLevel";
+			this->testArousalLevel->Size = System::Drawing::Size(82, 25);
+			this->testArousalLevel->TabIndex = 22;
+			this->testArousalLevel->Text = L"label19";
+			// 
+			// testValenceLevel
+			// 
+			this->testValenceLevel->AutoSize = true;
+			this->testValenceLevel->Location = System::Drawing::Point(888, 380);
+			this->testValenceLevel->Name = L"testValenceLevel";
+			this->testValenceLevel->Size = System::Drawing::Size(82, 25);
+			this->testValenceLevel->TabIndex = 21;
+			this->testValenceLevel->Text = L"label19";
+			// 
+			// testIntensityLevel
+			// 
+			this->testIntensityLevel->AutoSize = true;
+			this->testIntensityLevel->Location = System::Drawing::Point(888, 160);
+			this->testIntensityLevel->Name = L"testIntensityLevel";
+			this->testIntensityLevel->Size = System::Drawing::Size(82, 25);
+			this->testIntensityLevel->TabIndex = 20;
+			this->testIntensityLevel->Text = L"label19";
+			// 
 			// label11
 			// 
 			this->label11->AutoSize = true;
@@ -1342,33 +1367,6 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 			this->testTimer->Interval = 1000;
 			this->testTimer->Tick += gcnew System::EventHandler(this, &MainForm::testTimer_Tick);
 			// 
-			// testIntensityLevel
-			// 
-			this->testIntensityLevel->AutoSize = true;
-			this->testIntensityLevel->Location = System::Drawing::Point(888, 160);
-			this->testIntensityLevel->Name = L"testIntensityLevel";
-			this->testIntensityLevel->Size = System::Drawing::Size(82, 25);
-			this->testIntensityLevel->TabIndex = 20;
-			this->testIntensityLevel->Text = L"label19";
-			// 
-			// testValenceLevel
-			// 
-			this->testValenceLevel->AutoSize = true;
-			this->testValenceLevel->Location = System::Drawing::Point(888, 380);
-			this->testValenceLevel->Name = L"testValenceLevel";
-			this->testValenceLevel->Size = System::Drawing::Size(82, 25);
-			this->testValenceLevel->TabIndex = 21;
-			this->testValenceLevel->Text = L"label19";
-			// 
-			// testArousalLevel
-			// 
-			this->testArousalLevel->AutoSize = true;
-			this->testArousalLevel->Location = System::Drawing::Point(888, 605);
-			this->testArousalLevel->Name = L"testArousalLevel";
-			this->testArousalLevel->Size = System::Drawing::Size(82, 25);
-			this->testArousalLevel->TabIndex = 22;
-			this->testArousalLevel->Text = L"label19";
-			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(13, 25);
@@ -1441,11 +1439,12 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 		_trialTimer = gcnew System::Threading::Timer(trialCallback);
 
 
-		PBDEngine_CWrapper_Initialize();
+		OpenMPD_CWrapper_Initialize();
 		//PBDEngine_CWrapper_RegisterPrintFuncs(print, print, print);
-		PBDEngine_CWrapper_SetupEngine(2000000, PBDEngine::GSPAT_SOLVER::V2);
-		pm = PBDEngine_CWrapper_StartEngine(4, 32, 0, 38, false);
-		PBDEngine_CWrapper_SetupPhaseOnly(true);
+		OpenMPD_CWrapper_SetupEngine(2000000, OpenMPD::GSPAT_SOLVER::V2);
+		pm = OpenMPD_CWrapper_StartEngine(4, 32, 0, 38, false);
+		OpenMPD_CWrapper_SetupPhaseOnly(true);
+		
 
 	};
 
@@ -1503,8 +1502,8 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 			this->stepsControl->SelectedIndex--;
 	}; 
 	private: System::Void MainForm_FormClosing(System::Object^ sender, System::Windows::Forms::FormClosingEventArgs^ e) {
-		PBDEngine_CWrapper_StopEngine();
-		PBDEngine_CWrapper_Release();
+		OpenMPD_CWrapper_StopEngine();
+		OpenMPD_CWrapper_Release();
 	};
 	// control the action to perform when specific tab is reached 
 	private: System::Void stepsControl_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
@@ -1803,7 +1802,7 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 				nextTrial->Enabled = false;
 				trialStarted = System::DateTime::Now;
 				trialProgress->Width = (trialTimer->Interval / (stimulusSeconds * 1000.0)) * _trialWidth;
-				PBDEngine_CWrapper_commitUpdates(pm);
+				OpenMPD_CWrapper_commitUpdates(pm);
 				_trialTimer->Change(stimulusSeconds * 1000, -1);
 				trialTimer->Enabled = true;
 				
@@ -1822,7 +1821,7 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 	private: System::DateTime trialStarted;
 	private: System::Void OnTrialStimulusTimer(System::Object^ state) {
 		configureContent(pm, shapes[curShape], 0, curFrequencyBase, curNumSamples); // stop haptic
-		PBDEngine_CWrapper_commitUpdates(pm);
+		OpenMPD_CWrapper_commitUpdates(pm);
 
 		System::Action^ action = gcnew System::Action(this, &MainForm::ResetTrial);
 		BeginInvoke(action);
@@ -1904,7 +1903,7 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 				nextTest->Enabled = false;
 				testStarted = System::DateTime::Now;
 				testProgress->Width = (testTimer->Interval / (stimulusSeconds * 1000.0)) * _testWidth;
-				PBDEngine_CWrapper_commitUpdates(pm);
+				OpenMPD_CWrapper_commitUpdates(pm);
 				_testTimer->Change(stimulusSeconds * 1000, -1);
 				testTimer->Enabled = true;
 				selfUpdateNotHumanUpdate = false;
@@ -1921,7 +1920,7 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 	private: System::DateTime testStarted;
 	private: System::Void OnTestStimulusTimer(System::Object^ state) {
 			configureContent(pm, shapes[curShape], 0, curFrequencyBase, curNumSamples); // stop haptic
-			PBDEngine_CWrapper_commitUpdates(pm);
+			OpenMPD_CWrapper_commitUpdates(pm);
 
 			System::Action^ action = gcnew System::Action(this, &MainForm::ResetTest);
 			BeginInvoke(action);
@@ -1951,7 +1950,7 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 
 
 // Functions for PBD engine
-void declareContent(PBD_PrimitiveManager_Handler pm, float side) {
+void declareContent(OpenMPD_Context_Handler pm, float side) {
 	//Let's delete the shapes if they had already been created:
 	for (int s = 0; s < 5; s++)
 		if (shapes[s] != NULL) {
@@ -1961,7 +1960,7 @@ void declareContent(PBD_PrimitiveManager_Handler pm, float side) {
 
 	//A. Fixed amplitude (used with PoV circles)
 	float a1_data[] = { 15000.0f };
-	fixedAmplitude = PBDEngine_CWrapper_createAmplitudesDescriptor(pm, a1_data, 1);
+	fixedAmplitude = OpenMPD_CWrapper_createAmplitudesDescriptor(pm, a1_data, 1);
 
 	//B. Declare shapes (this is a declaration... we will need to sample them at specific frequencies later, diameter). 	
 	// zhouyang : the side here is single half of the path that finish stimulation (just for the line)
@@ -2002,7 +2001,7 @@ void declareContent(PBD_PrimitiveManager_Handler pm, float side) {
 }
 
 
-void configureContent(PBD_PrimitiveManager_Handler pm, HapticShape* shape, int numPoints, int baseFrequency, int numSamples) {
+void configureContent(OpenMPD_Context_Handler pm, HapticShape* shape, int numPoints, int baseFrequency, int numSamples) {
 	debugprintf("\n\nCurrent stimuli:\n\t -Input: %s, %f m, %d points, %d Hz (per point).", shape->name(), shape->length(), numPoints, baseFrequency);
 	debugprintf("\n\t -devived parameters: draw speed = %f m/s; draw frequency = %d Hz .", shape->length() * baseFrequency, baseFrequency * numPoints);
 	debugprintf("\n\t diameter(line length)=%f meters .", side1);
@@ -2011,15 +2010,15 @@ void configureContent(PBD_PrimitiveManager_Handler pm, HapticShape* shape, int n
 	//0. Disable previously existing primitives:
 	std::list<cl_uint>::iterator p = primitives.begin();
 	for (; p != primitives.end(); p++) {
-		PBDEngine_CWrapper_setPrimitiveEnabled(pm, *p, false);
-		PBDEngine_CWrapper_releasePrimitive(pm, *p);
+		OpenMPD_CWrapper_setPrimitiveEnabled(pm, *p, false);
+		OpenMPD_CWrapper_releasePrimitive(pm, *p);
 	}
 	primitives.clear();
-	PBDEngine_CWrapper_commitUpdates(pm);
+	OpenMPD_CWrapper_commitUpdates(pm);
 
 
 	//1. Destroy previous position descriptors:
-	PBDEngine_CWrapper_releasePositionsDescriptor(pm, currentPD);
+	OpenMPD_CWrapper_releasePositionsDescriptor(pm, currentPD);
 	//2. Sample new shape: We do not check 10000 % baseFrequency again.
 	size_t updatesPerShape = 10000 / baseFrequency;
 	if (numSamples < 1) numSamples = updatesPerShape;
@@ -2056,33 +2055,33 @@ void configureContent(PBD_PrimitiveManager_Handler pm, HapticShape* shape, int n
 		}
 	}
 
-	currentPD = PBDEngine_CWrapper_createPositionsDescriptor(pm, bufferPerShape, updatesPerShape);
+	currentPD = OpenMPD_CWrapper_createPositionsDescriptor(pm, bufferPerShape, updatesPerShape);
 	//3. Create "numPoint" primitives, using these descriptors. 
 	for (int p = 0; p < numPoints; p++) {
-		cl_uint primitive = PBDEngine_CWrapper_declarePrimitive(pm, currentPD, fixedAmplitude, (p * updatesPerShape) / numPoints);
-		PBDEngine_CWrapper_setPrimitiveEnabled(pm, primitive, true);
+		cl_uint primitive = OpenMPD_CWrapper_declarePrimitive(pm, currentPD, fixedAmplitude, (p * updatesPerShape) / numPoints);
+		OpenMPD_CWrapper_setPrimitiveEnabled(pm, primitive, true);
 		primitives.push_back(primitive);
 	}
-	PBDEngine_CWrapper_commitUpdates(pm);
+	OpenMPD_CWrapper_commitUpdates(pm);
 	if (updatesPerShape != numSamples) delete bufferPerShape;
 	delete samples;
 }
 
-void destroyContent(PBD_PrimitiveManager_Handler pm) {
+void destroyContent(OpenMPD_Context_Handler pm) {
 	//0. Disable previously existing primitives:
 	std::list<cl_uint>::iterator p = primitives.begin();
 	for (; p != primitives.end(); p++) {
-		PBDEngine_CWrapper_setPrimitiveEnabled(pm, *p, false);
-		PBDEngine_CWrapper_releasePrimitive(pm, *p);
+		OpenMPD_CWrapper_setPrimitiveEnabled(pm, *p, false);
+		OpenMPD_CWrapper_releasePrimitive(pm, *p);
 	}
 	primitives.clear();
 	//1. Destroy previous position descriptors:
-	PBDEngine_CWrapper_releasePositionsDescriptor(pm, currentPD);
-	PBDEngine_CWrapper_releaseAmplitudesDescriptor(pm, fixedAmplitude);
-	PBDEngine_CWrapper_commitUpdates(pm);
+	OpenMPD_CWrapper_releasePositionsDescriptor(pm, currentPD);
+	OpenMPD_CWrapper_releaseAmplitudesDescriptor(pm, fixedAmplitude);
+	OpenMPD_CWrapper_commitUpdates(pm);
 
 	//If you are using "force sync", we need to give the engine a chance to apply all this
 	// Calling update_HighLevel allows engine to react to changes 
-	PBDEngine_CWrapper_update_HighLevel(pm, NULL, 0, NULL, NULL/*, GSPAT::MatrixAlignment::RowMajorAlignment*/);
+	OpenMPD_CWrapper_update_HighLevel(pm, NULL, 0, NULL, NULL/*, GSPAT::MatrixAlignment::RowMajorAlignment*/);
 	Sleep(100);
 }

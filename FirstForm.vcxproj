@@ -80,13 +80,14 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\OpenGLFramework\;$(ProjectDir);$(LIBS_HOME)\include;$(LIBS_HOME)\include\AsierInho;$(LIBS_HOME)\include\GSPAT_SolverV2;$(LIBS_HOME)\include\GSPAT_RenderingEngine;$(CUDA_PATH)\include;$(SolutionDir);$(LIBS_HOME)\include\GLFW;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\OpenGLFramework\;$(ProjectDir);$(LIBS_HOME)\include;$(LIBS_HOME)\include\AsierInho;$(LIBS_HOME)\include\GSPAT_SolverV2;$(LIBS_HOME)\include\OpenMPD;$(CUDA_PATH)\include;$(SolutionDir);$(LIBS_HOME)\include\GLFW;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>GSPAT_RenderingEngine.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>OpenMPD.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>main</EntryPointSymbol>
-      <AdditionalLibraryDirectories>$(LIBS_HOME)\lib;$(LIBS_HOME)\lib\GSPAT_SolverV2;$(LIBS_HOME)\lib\AsierInho;$(LIBS_HOME)\lib\GSPAT_RenderingEngine;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(LIBS_HOME)\lib;$(LIBS_HOME)\lib\OpenMPD;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>MSVCRT.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -139,32 +140,6 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\6.simplePBDEngine\6.simplePBDEngine.vcxproj">
-      <Project>{61e9d77e-ebfa-49bd-ad3a-e771344c6dcf}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\GSPAT_RenderingEngine\RenderingEnging.vcxproj">
-      <Project>{4cf76e7a-aada-44c0-b8d2-68dfde3a9c01}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\GSPAT_SolverIBP\GSPAT_SolverIBP.vcxproj">
-      <Project>{20c85f85-5fac-4e6d-bd0a-8b436de149c9}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\GSPAT_SolverNaive\GSPAT_SolverNaive.vcxproj">
-      <Project>{9cb9ddf8-151d-472f-bf06-b30beb5950d2}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\GSPAT_SolverV2\GSPAT_SolverV2.vcxproj">
-      <Project>{5d650ecc-51a0-46b5-aa82-a51a5f97941a}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\GSPAT_SolverV3\GSPAT_SolverV3.vcxproj">
-      <Project>{4336dae0-7cf8-4391-b8b8-4dfae6a2e382}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\GSPAT_SolverV4\GSPAT_SolverV4.vcxproj">
-      <Project>{43c4c52d-7e6a-46ad-a707-4d2d2590f03f}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\SpeedTests_PBDEngine\SpeedTests_PBDEngine.vcxproj">
-      <Project>{30ad9e7d-573c-4996-b895-ea47440072ce}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

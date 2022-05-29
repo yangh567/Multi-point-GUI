@@ -1,6 +1,4 @@
-﻿  InputOutputRangeMapper.cpp
-  Interpolation.cpp
-  MainForm.cpp
+﻿  MainForm.cpp
 C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\HapticShape.h(12,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\HapticShape.h(18,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   The contents of <variant> are available only with C++17 or later.
@@ -8,38 +6,36 @@ C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\F
 C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(65,37): message : consider using '%hs' in the format string
 C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(65,37): message : consider using '%Ts' in the format string
 C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(65,37): message : this warning is based on non-standard semantics used by Visual C++
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1467,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1478,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1769,77): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1804,80): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1845,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1871,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1905,78): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1943,88): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1970,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1970,102): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1974,62): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1975,62): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1976,55): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1976,85): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1988,66): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1988,104): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1989,66): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1989,104): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1990,66): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1990,104): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1991,66): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1991,104): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2024,50): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2030,56): warning C4474: 'printf' : too many arguments passed for format string
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2030,56): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2036,72): warning C4474: 'printf' : too many arguments passed for format string
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2036,72): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2058,92): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2061,121): warning C4267: 'argument': conversion from 'size_t' to 'cl_uint', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1470,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1481,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1774,77): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1809,80): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1850,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1876,89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1910,78): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1948,88): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1975,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1975,102): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1979,62): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1980,62): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1981,55): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1981,85): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1993,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1993,104): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1994,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1994,104): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1995,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1995,104): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1996,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(1996,104): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2029,50): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2035,56): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2035,56): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2041,72): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2041,72): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2063,92): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(2066,121): warning C4267: 'argument': conversion from 'size_t' to 'cl_uint', possible loss of data
 C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.cpp(6,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  Generating Code...
 C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(56): warning C4793: 'debugprintf': function compiled as native:
   	varargs not supported under /clr
 C:\Users\User\Desktop\ucl_phd_programme\levitator-codes\GSPAT_FrameworkUnified\FirstForm\MainForm.h(59): warning C4793: 'debugprintf': function compiled as native:

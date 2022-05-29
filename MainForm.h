@@ -74,7 +74,7 @@ std::ofstream responses;
 std::ofstream quest_responses;
 std::ofstream q_responses;
 
-const int stimulusSeconds = 10;
+const int stimulusSeconds = 1;
 int currentSeconds = 0;
 
 namespace FirstForm {
@@ -441,7 +441,8 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 			this->tabID->Size = System::Drawing::Size(996, 807);
 			this->tabID->TabIndex = 0;
 			this->tabID->Text = L"ID";
-			this->tabID->UseVisualStyleBackColor = true;			// 
+			this->tabID->UseVisualStyleBackColor = true;
+			// 
 			// lbWelcome
 			// 
 			this->lbWelcome->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
@@ -647,6 +648,7 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 			this->button9->TabIndex = 6;
 			this->button9->Text = L"Previous Tip";
 			this->button9->UseVisualStyleBackColor = true;
+			this->button9->Click += gcnew System::EventHandler(this, &MainForm::button9_Click);
 			// 
 			// button5
 			// 
@@ -698,6 +700,7 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 			this->button10->TabIndex = 16;
 			this->button10->Text = L"Previous Tip";
 			this->button10->UseVisualStyleBackColor = true;
+			this->button10->Click += gcnew System::EventHandler(this, &MainForm::button10_Click);
 			// 
 			// tabPage1
 			// 
@@ -1540,6 +1543,8 @@ private: System::Windows::Forms::Label^ testIntensityLevel;
 	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) { NextStep(); };
 	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) { PreviousStep(); };
 	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) { PreviousStep(); };
+	private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) { PreviousStep(); };
+	private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e) { PreviousStep(); };
 	private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) { NextStep(); };
 	private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e) { PreviousStep(); };
 	private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) { 
